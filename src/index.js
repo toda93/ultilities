@@ -46,6 +46,8 @@ export function sanitize(content) {
                 'font-style': [/^.*$/],
                 'font-family': [/^.*$/],
                 'font-weight': [/^bold$/],
+                'width': [/^\d+(?:px|em|%)$/],
+                'height': [/^\d+(?:px|em|%)$/],
             }
         },
         allowedIframeHostnames: ['www.youtube.com']
