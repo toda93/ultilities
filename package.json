@@ -23,5 +23,8 @@
         "url": "https://github.com/toda93/utilities/issues"
     },
     "homepage": "https://github.com/toda93/utilities#readme",
-    "dependencies": {}
+    "dependencies": {
+        "html-minifier": "^4.0.0",
+        "sanitize-html": "^1.22.0"
+    }
 }
