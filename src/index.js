@@ -1,8 +1,5 @@
 import sanitizeHtml from 'sanitize-html';
-import { minify } from 'html-minifier';
-import nanoid from 'nanoid';
-import generate from 'nanoid/generate';
-
+import {minify} from 'html-minifier';
 
 
 export function timeout(ms) {
@@ -57,9 +54,4 @@ export function sanitize(content) {
     return minify(content.trim(), {
         collapseWhitespace: true
     });
-}
-
-
-export function randomString(strlen) {
-    return nanoid(strlen);
 }
