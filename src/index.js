@@ -43,7 +43,6 @@ export function sanitize(content) {
                 'font-size': [/^\d+(?:px|em|%)$/],
                 'line-height': [/^.*$/],
                 'font-style': [/^.*$/],
-                'font-family': [/^.*$/],
                 'font-weight': [/^bold$/],
                 'width': [/^\d+(?:px|em|%)$/],
                 'height': [/^\d+(?:px|em|%)$/],
