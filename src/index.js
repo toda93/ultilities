@@ -41,7 +41,6 @@ export function sanitize(content) {
                 'text-align': [/^left$/, /^right$/, /^center$/],
                 // Match any number with px, em, or %
                 'font-size': [/^\d+(?:px|em|%)$/],
-                'line-height': [/^.*$/],
                 'font-style': [/^.*$/],
                 'font-weight': [/^bold$/],
                 'width': [/^\d+(?:px|em|%)$/],
