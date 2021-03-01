@@ -1,5 +1,5 @@
 import sanitizeHtml from 'sanitize-html';
-import {minify} from 'html-minifier';
+import { minify } from 'html-minifier';
 
 
 export function timeout(ms) {
@@ -45,6 +45,7 @@ export function sanitize(content) {
                 'font-size': [/^\d+(?:px|em|%)$/],
                 'font-style': [/^.*$/],
                 'font-weight': [/^bold$/],
+                'font-family': [/^.*$/],
                 'width': [/^\d+(?:px|em|%)$/],
                 'height': [/^\d+(?:px|em|%)$/],
             }
