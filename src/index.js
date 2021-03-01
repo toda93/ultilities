@@ -32,8 +32,10 @@ export function sanitize(content) {
             a: ['href', 'name', 'target'],
             img: ['src', 'alt', 'title'],
             iframe: ['src'],
-            '*': ['style'],
+            '*': ['style', 'itemprop', 'itemtype', 'itemscope'],
         },
+        allowedSchemes: ['http', 'https', 'mailto', 'tel'],
+        allowedSchemesAppliedToAttributes: ['href', 'src'],
         allowedStyles: {
             '*': {
                 // Match HEX and RGB
