@@ -40,7 +40,7 @@ export function sanitize(content) {
             '*': {
                 // Match HEX and RGB
                 'color': [/^\#(0x)?[0-9a-f]+$/i, /^rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/],
-                'text-align': [/^left$/, /^right$/, /^center$/],
+                'text-align': [/^left$/, /^right$/, /^center$/, /^justify$/],
                 // Match any number with px, em, or %
                 'font-size': [/^\d+(?:px|em|%)$/],
                 'font-style': [/^.*$/],
