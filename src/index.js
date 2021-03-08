@@ -84,12 +84,15 @@ export function sanitize(content) {
             'video',
             'iframe',
             'svg',
+            'summary',
+            'details'
         ],
         allowedAttributes: {
             a: ['href', 'name', 'target', 'rel'],
             img: ['src', 'alt', 'title'],
             iframe: ['src'],
             '*': ['style', 'itemscope', 'itemtype', 'itemprop'],
+            details: ['open'],
         },
         allowedStyles: {
             '*': {
